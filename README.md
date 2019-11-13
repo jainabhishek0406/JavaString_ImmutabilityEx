@@ -16,10 +16,15 @@ Immutable objects are always thread safe.
 
 To create an immutable object what rules we need to follow?
 To create an immutable object you need to follow some simple rules:
+
 •	Don't add any setter method
+
 •	Declare all fields final and private
+
 •	If a field is a mutable object create defensive copies of it for getter methods
+
 •	If a mutable object passed to the constructor must be assigned to a field create a defensive copy of it
+
 •	Don't allow subclasses to override methods.
 
 Source- https://dzone.com/articles/immutable-objects-in-java
