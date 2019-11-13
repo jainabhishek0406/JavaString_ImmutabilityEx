@@ -1,5 +1,7 @@
 # Java String Immutability
-code implementation for string immutability.
+Code implementation for string immutability.
+
+Trying to solve below problems here,
 
 1.	Can somebody clarify what is meant by immutable?
 2.	Why is a String immutable?
