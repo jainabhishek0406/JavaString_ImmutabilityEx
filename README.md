@@ -55,32 +55,47 @@ public class ImmutableStringEx {
         
         String str2 = "Jain";
 
-        System.out.println("str1 & str2 values before string concatenation");
-        System.out.println("str1 = " + str1);
-        System.out.println("str2 = " + str2);
+        System.out.println("str1 & str2 values and hashcode before string concatenation");
+        System.out.println("str1 hashcode = " + str1.hashCode());
+        System.out.println("str1 content = " + str1);
+        System.out.println("str2 hashcode = " + str2.hashCode());
+        System.out.println("str2 content = " + str2);
 
         //string concatenation
         str1 = str1+str2;
 
-        System.out.println("\nstr1 & str2 values before string concatenation");
-        System.out.println("str1 = " + str1);
-        System.out.println("str2 = " + str2);
+        System.out.println("\nstr1 & str2 values and hashcode after string concatenation");
+        System.out.println("str1 hashcode = " + str1.hashCode());
+        System.out.println("str1 content = " + str1);
+        System.out.println("str2 hashcode = " + str2.hashCode());
+        System.out.println("str2 content = " + str2);
+
+        //str1 hashcode is changed after concatenation, it means reference is updated because object is created again after concatenation.
+        //str2 hashcode is same.
     }
 }
 
 Output of this program is
 
-str1 & str2 values before string concatenation
+str1 & str2 values and hashcode before string concatenation
 
-str1 = Abhishek
+str1 hashcode = 1472500157
 
-str2 = Jain
+str1 content = Abhishek
 
-str1 & str2 values before string concatenation
+str2 hashcode = 2301116
 
-str1 = AbhishekJain
+str2 content = Jain
 
-str2 = Jain
+str1 & str2 values and hashcode after string concatenation
+
+str1 hashcode = -610367495
+
+str1 content = AbhishekJain
+
+str2 hashcode = 2301116
+
+str2 content = Jain
 
 It seems object str1 content is modified from ‘Abhishek’ to ‘AbhishekJain’, so str1 appears to be Mutable.
 But what we are thinking here is incorrect, I already mentioned string is immutable, let me explain again.
