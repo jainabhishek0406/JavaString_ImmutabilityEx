@@ -1,7 +1,11 @@
-str1 & str2 values before string concatenation
-str1 = Abhishek
-str2 = Jain
+str1 & str2 values and hashcode before string concatenation
+str1 hashcode = 1472500157
+str1 content = Abhishek
+str2 hashcode = 2301116
+str2 content = Jain
 
-str1 & str2 values before string concatenation
-str1 = AbhishekJain
-str2 = Jain
+str1 & str2 values and hashcode after string concatenation
+str1 hashcode = -610367495
+str1 content = AbhishekJain
+str2 hashcode = 2301116
+str2 content = Jain
