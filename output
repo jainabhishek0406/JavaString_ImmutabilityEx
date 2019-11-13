@@ -1,0 +1,7 @@
+str1 & str2 values before string concatenation
+str1 = Abhishek
+str2 = Jain
+
+str1 & str2 values before string concatenation
+str1 = AbhishekJain
+str2 = Jain
